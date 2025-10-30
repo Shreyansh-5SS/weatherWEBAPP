@@ -242,6 +242,27 @@
         backdrop-filter: blur(10px);
         border: 1px solid rgba(255, 255, 255, 0.3);
       }
+
+      .dropdown-item {
+        transition: all 0.3s;
+      }
+
+      .dropdown-item:hover {
+        background: rgba(102, 126, 234, 0.2);
+        transform: translateX(5px);
+      }
+
+      /* Smooth scroll */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Link styling */
+      a.text-white:hover {
+        text-decoration: underline !important;
+        transform: scale(1.05);
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
@@ -279,16 +300,21 @@
                 <i class="fas fa-info-circle"></i> About
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"><i class="fas fa-code"></i> API Used</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fas fa-star"></i> Features</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-code"></i> WeatherAPI - Real-time weather data</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-star"></i> Beautiful animated UI with glassmorphism</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#"><i class="fas fa-envelope"></i> Contact</a>
+                  <a class="dropdown-item" href="https://github.com/Shreyansh-5SS" target="_blank">
+                    <i class="fab fa-github"></i> Created by Shreyansh-5SS
+                  </a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-book"></i> How to Use</a>
+              <a class="nav-link" href="#how-to-use"><i class="fas fa-book"></i> How to Use</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -477,6 +503,69 @@
             </table>
           </div>
         </div>
+
+        <!-- How to Use Section -->
+        <div id="how-to-use" class="my-5 py-4">
+          <div class="table-container">
+            <h2 class="text-center mb-4">
+              <i class="fas fa-book"></i> How to Use This App 📖
+            </h2>
+            <div class="row text-white">
+              <div class="col-md-4 mb-3">
+                <div class="weather-item p-4 text-center">
+                  <i class="fas fa-search" style="font-size: 2rem; margin-bottom: 15px;"></i>
+                  <h5>1. Search City</h5>
+                  <p>Enter any city name in the search bar and click Search or press Enter</p>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="weather-item p-4 text-center">
+                  <i class="fas fa-cloud-sun" style="font-size: 2rem; margin-bottom: 15px;"></i>
+                  <h5>2. View Weather</h5>
+                  <p>Get real-time temperature, humidity, wind speed, and more information</p>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="weather-item p-4 text-center">
+                  <i class="fas fa-globe-asia" style="font-size: 2rem; margin-bottom: 15px;"></i>
+                  <h5>3. Compare Cities</h5>
+                  <p>Scroll down to see weather data for multiple popular cities at once</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="my-5 py-4">
+          <div class="table-container">
+            <h2 class="text-center mb-4">
+              <i class="fas fa-envelope"></i> Contact Me 📬
+            </h2>
+            <div class="row text-white justify-content-center">
+              <div class="col-md-8 text-center">
+                <div class="weather-item p-4">
+                  <h4 class="mb-4">👨‍💻 Shreyansh</h4>
+                  <div class="mb-3">
+                    <a href="https://github.com/Shreyansh-5SS" target="_blank" class="text-white text-decoration-none" style="font-size: 1.2rem;">
+                      <i class="fab fa-github"></i> GitHub: Shreyansh-5SS
+                    </a>
+                  </div>
+                  <div class="mb-3">
+                    <i class="fas fa-code"></i> Full Stack Developer | Weather App Creator
+                  </div>
+                  <div class="mt-4">
+                    <p><i class="fas fa-info-circle"></i> Feel free to fork this project and make it your own!</p>
+                    <a href="https://github.com/Shreyansh-5SS/weatherWEBAPP" target="_blank" class="btn btn-search mt-2">
+                      <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </main>
     </div>
     <script
